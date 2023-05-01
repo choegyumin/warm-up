@@ -1,0 +1,50 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# config files
+.*ignore
+package.json
+.env
+.env.*
+.*rc
+.*rc.js
+.*rc.json
+.*rc.yml
+.*rc.yaml
+*.config.js
+*.config.json
+tsconfig.json
+*.setup.js
+*.setup.json
+
+# dependencies
+node_modules
+.pnp
+.pnp.js
+.yarn
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# testing
+coverage
+
+# next.js
+.next/
+out/
+build
+
+# turbo
+.turbo
+turbo.json
+
+# swc
+.swc
+
+# husky
+.husky
+
+# editor
+.vscode
+
+# GitHub
+pull_request_template.md
