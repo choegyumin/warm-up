@@ -1,4 +1,5 @@
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const withLinaria = require('next-linaria');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -24,4 +25,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withLinaria(nextConfig);
