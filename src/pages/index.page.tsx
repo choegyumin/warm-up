@@ -2,10 +2,12 @@ import * as styles from '@/styles/Home.css';
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
 import Image from 'next/image';
+import useHome from './useHome';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
+  const { onDescriptionClick } = useHome();
   return (
     <>
       <Head>
@@ -16,7 +18,7 @@ export default function Home() {
       </Head>
       <main className={inter.className} css={styles.main}>
         <div css={styles.description}>
-          <p>
+          <p onClick={onDescriptionClick}>
             Get started by editing&nbsp;
             <code css={styles.code}>src/pages/index.page.tsx</code>
           </p>
