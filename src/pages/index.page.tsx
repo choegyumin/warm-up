@@ -1,13 +1,14 @@
+import ErrorBoundary from '@/components/ErrorBoundary/ErrorBoundary';
+import MyProfile from '@/components/MyProfile/MyProfile';
 import * as styles from '@/styles/Home.css';
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
 import Image from 'next/image';
-import useHome from './useHome';
+import { Suspense } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
-  const { onDescriptionClick } = useHome();
   return (
     <>
       <Head>
@@ -17,8 +18,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={inter.className} css={styles.main}>
+        <ErrorBoundary fallback={<div>Error!</div>}>
+          <Suspense fallback={<div>Loading...</div>}>
+            <MyProfile />
+          </Suspense>
+        </ErrorBoundary>
         <div css={styles.description}>
-          <p onClick={onDescriptionClick}>
+          <p>
             Get started by editing&nbsp;
             <code css={styles.code}>src/pages/index.page.tsx</code>
           </p>

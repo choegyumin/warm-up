@@ -5,7 +5,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
-  plugins: ['@typescript-eslint', 'import', 'jsx-a11y', '@emotion'],
+  plugins: ['@typescript-eslint', 'import', 'jsx-a11y', '@emotion', '@tanstack/query'],
   extends: [
     // 'eslint:recommended',
     // 'plugin:@typescript-eslint/recommended',
@@ -16,6 +16,7 @@ module.exports = {
     // 'plugin:react-hooks/recommended',
     // 'plugin:@next/next/recommended',
     'next/core-web-vitals',
+    'plugin:@tanstack/eslint-plugin-query/recommended',
     'prettier',
   ],
   settings: {
