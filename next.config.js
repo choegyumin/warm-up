@@ -4,6 +4,9 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
+  compiler: {
+    emotion: true,
+  },
   webpack(config, options) {
     const { dev, isServer } = options;
     // Do not run type checking twice:

@@ -5,7 +5,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
-  plugins: ['@typescript-eslint', 'import', 'jsx-a11y'],
+  plugins: ['@typescript-eslint', 'import', 'jsx-a11y', '@emotion'],
   extends: [
     // 'eslint:recommended',
     // 'plugin:@typescript-eslint/recommended',
