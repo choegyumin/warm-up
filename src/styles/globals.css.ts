@@ -13,7 +13,7 @@ export const globals = css`
   }
 
   :where(body, #__next) {
-    contain: layout;
+    container-type: inline-size;
     min-width: min-content;
   }
 
@@ -23,5 +23,10 @@ export const globals = css`
     overflow-wrap: anywhere;
     word-break: keep-all;
     word-wrap: break-word;
+    line-height: 1.5;
+  }
+
+  button {
+    cursor: pointer;
   }
 `;

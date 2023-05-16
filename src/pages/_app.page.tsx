@@ -5,7 +5,10 @@ import ErrorBoundary from '@/components/ErrorBoundary';
 import setupAPIMocks from '@/services/api/mocks/setup';
 import * as styles from '@/styles/globals.css';
 import { Global } from '@emotion/react';
+import { Nanum_Myeongjo } from 'next/font/google';
 import { useEffect, useState } from 'react';
+
+const inter = Nanum_Myeongjo({ subsets: ['latin'], weight: ['400', '700'] });
 
 const shouldAPIMocking = process.env.NEXT_PUBLIC_API_MOCKING === 'enabled';
 
@@ -36,11 +39,18 @@ export default function App({ Component, pageProps }: AppProps) {
   }
 
   return (
-    <ErrorBoundary fallback={<div>Service Error</div>}>
-      <AppProvider>
-        <Global styles={styles.globals} />
-        <Component {...pageProps} />
-      </AppProvider>
-    </ErrorBoundary>
+    <>
+      <style jsx global>{`
+        html {
+          font-family: ${inter.style.fontFamily};
+        }
+      `}</style>
+      <ErrorBoundary fallback={<div>Service Error</div>}>
+        <AppProvider>
+          <Global styles={styles.globals} />
+          <Component {...pageProps} />
+        </AppProvider>
+      </ErrorBoundary>
+    </>
   );
 }
