@@ -186,3 +186,9 @@ dist
 
 # misc
 *.pem
+
+# turbo
+.turbo
+
+# vercel
+.vercel
