@@ -1,12 +1,12 @@
 {
-  "name": "ui",
+  "name": "design-system",
   "version": "0.0.0",
   "main": "./index.tsx",
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint \"**/*.ts*\"",
-    "generate:component": "turbo gen react-component"
+    "lint": "eslint \"src/**/*.ts*\"",
+    "gen:component": "turbo gen react-component"
   },
   "dependencies": {
     "react": "^18.2.0"

@@ -1,4 +1,4 @@
-import { Button, Header } from "ui";
+import { Button, Header } from "design-system";
 
 export default function Page() {
   return (
