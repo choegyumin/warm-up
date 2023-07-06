@@ -1,22 +1,35 @@
 {
-  "private": true,
+  "name": "warm-up",
+  "description": "",
+  "version": "0.1.0",
+  "author": "",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choegyumin/warm-up.git"
+  },
+  "bugs": {
+    "url": "https://github.com/choegyumin/warm-up/issues"
+  },
+  "homepage": "https://github.com/choegyumin/warm-up#readme",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "yarn@3.6.1",
   "devDependencies": {
     "@turbo/gen": "latest",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
     "prettier": "^2.5.1",
-    "turbo": "latest"
-  },
-  "name": "warm-up",
-  "packageManager": "yarn@3.6.1",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+    "turbo": "latest",
+    "typescript": "^4.5.3"
+  }
 }
