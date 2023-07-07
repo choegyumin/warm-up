@@ -802,6 +802,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/query-core@npm:4.29.19":
+  version: 4.29.19
+  resolution: "@tanstack/query-core@npm:4.29.19"
+  checksum: 91a79dbebebc139d118542a5fe83fb54a6f6448bbe1563db1a0bed0c6d44e1d023613efde3c4ac747c72d067110013ac56f90611bf8affc390eda1ac3f99066e
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^4.29.19":
+  version: 4.29.19
+  resolution: "@tanstack/react-query@npm:4.29.19"
+  dependencies:
+    "@tanstack/query-core": 4.29.19
+    use-sync-external-store: ^1.2.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-native: "*"
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: 2780ac35b4d1dabcd3e708b95891376e7e609109270d40442b33f4747c508c23e46bcadc692f997f81d38f62b5ab31f8e42bc9a785dfa4afe0c390adb6f37e52
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -809,7 +835,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trpc/server@npm:^10.34.0":
+"@trpc/client@npm:^10.34.0":
+  version: 10.34.0
+  resolution: "@trpc/client@npm:10.34.0"
+  peerDependencies:
+    "@trpc/server": 10.34.0
+  checksum: 7589d575d92865091da72bf0eb7efbfc474422aecc2d4ac146be334bbe83a2a67eb185654dccb91b90e23207bfada2b9f4e4ebcc25a24c2a7e033c177f13e10c
+  languageName: node
+  linkType: hard
+
+"@trpc/react-query@npm:^10.34.0":
+  version: 10.34.0
+  resolution: "@trpc/react-query@npm:10.34.0"
+  peerDependencies:
+    "@tanstack/react-query": ^4.18.0
+    "@trpc/client": 10.34.0
+    "@trpc/server": 10.34.0
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 5489f4041da444795d59b8b766ba0924569317f62ab5a85411ff4bfde2b37e2d30e590fb4041dc7f799f519d6e28f5e120b16fd9066ffcb1f477d17abbe216ec
+  languageName: node
+  linkType: hard
+
+"@trpc/server@npm:*, @trpc/server@npm:^10.34.0":
   version: 10.34.0
   resolution: "@trpc/server@npm:10.34.0"
   checksum: 6d319c98f8a152539cd46769884ddea01bf00daaf1780067b1a1e34b45a107ab702b72e0086fa8924be44d9211b51c8f4e53ab6e85583fa53fa5893df5847c62
@@ -861,6 +909,15 @@ __metadata:
   bin:
     gen: dist/cli.js
   checksum: 5889723ba3ec6bf43fb73a54fdd1c67060ebb7fce6474f26621a473bb955eb70bf6de68fd6e0adb4045a1cf71b042225a52ed89d1d8a673ff9cf313d940e15d9
+  languageName: node
+  linkType: hard
+
+"@types/cors@npm:^2.8.5":
+  version: 2.8.13
+  resolution: "@types/cors@npm:2.8.13"
+  dependencies:
+    "@types/node": "*"
+  checksum: 7ef197ea19d2e5bf1313b8416baa6f3fd6dd887fd70191da1f804f557395357dafd8bc8bed0ac60686923406489262a7c8a525b55748f7b2b8afa686700de907
   languageName: node
   linkType: hard
 
@@ -1858,6 +1915,9 @@ __metadata:
     "@emotion/react": ^11.11.0
     "@emotion/styled": ^11.11.0
     "@rushstack/eslint-patch": ^1.1.3
+    "@tanstack/react-query": ^4.29.19
+    "@trpc/client": ^10.34.0
+    "@trpc/react-query": ^10.34.0
     "@types/node": ^18.0.0
     "@types/react": ^18.2.0
     "@types/react-dom": ^18.2.0
@@ -2072,6 +2132,16 @@ __metadata:
   version: 3.31.1
   resolution: "core-js-pure@npm:3.31.1"
   checksum: 93c3dd28471755cb81ec4828f5617bd32a7c682295d88671534a6733a0d41dae9e28f8f8000ddd1f1e597a3bec4602db5f906a03c9ba1a360534f7ae2519db7c
+  languageName: node
+  linkType: hard
+
+"cors@npm:^2.8.5":
+  version: 2.8.5
+  resolution: "cors@npm:2.8.5"
+  dependencies:
+    object-assign: ^4
+    vary: ^1
+  checksum: ced838404ccd184f61ab4fdc5847035b681c90db7ac17e428f3d81d69e2989d2b680cc254da0e2554f5ed4f8a341820a1ce3d1c16b499f6e2f47a1b9b07b5006
   languageName: node
   linkType: hard
 
@@ -5237,7 +5307,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"object-assign@npm:^4.1.1":
+"object-assign@npm:^4, object-assign@npm:^4.1.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
   checksum: fcc6e4ea8c7fe48abfbb552578b1c53e0d194086e2e6bbbf59e0a536381a292f39943c6e9628af05b5528aa5e3318bb30d6b2e53cadaf5b8fe9e12c4b69af23f
@@ -6107,8 +6177,10 @@ __metadata:
   dependencies:
     "@rushstack/eslint-patch": ^1.1.3
     "@trpc/server": ^10.34.0
+    "@types/cors": ^2.8.5
     "@types/node": ^18.0.0
     api: "*"
+    cors: ^2.8.5
     eslint: ^7.32.0
     eslint-config-custom: "*"
     ts-node-dev: ^2.0.0
@@ -7065,6 +7137,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"use-sync-external-store@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "use-sync-external-store@npm:1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 5c639e0f8da3521d605f59ce5be9e094ca772bd44a4ce7322b055a6f58eeed8dda3c94cabd90c7a41fb6fa852210092008afe48f7038792fd47501f33299116a
+  languageName: node
+  linkType: hard
+
 "util-deprecate@npm:^1.0.1":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
@@ -7102,6 +7183,13 @@ __metadata:
   dependencies:
     builtins: ^5.0.0
   checksum: 5342a994986199b3c28e53a8452a14b2bb5085727691ea7aa0d284a6606b127c371e0925ae99b3f1ef7cc7d2c9de75f52eb61a3d1cc45e39bca1e3a9444cbb4e
+  languageName: node
+  linkType: hard
+
+"vary@npm:^1":
+  version: 1.1.2
+  resolution: "vary@npm:1.1.2"
+  checksum: ae0123222c6df65b437669d63dfa8c36cee20a504101b2fcd97b8bf76f91259c17f9f2b4d70a1e3c6bbcee7f51b28392833adb6b2770b23b01abec84e369660b
   languageName: node
   linkType: hard
 
