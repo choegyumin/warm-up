@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only ./src",
+    "build": "tsc",
+    "start": "node ./dist",
+    "lint": "eslint \"src/**/*.ts*\""
+  },
+  "dependencies": {
+    "@trpc/server": "^10.34.0",
+    "zod": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.12",
+    "api": "*",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig": "*",
+    "turbo": "latest",
+    "typescript": "^4.5.3"
+  }
+}

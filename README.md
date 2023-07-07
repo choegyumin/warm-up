@@ -17,6 +17,8 @@ This Turborepo includes the following packages/apps:
 ### Apps and Packages
 
 - `client`: a [Next.js](https://nextjs.org/) app
+- `server`: a server providing the API
+- `api`: a [tRPC](https://trpc.io/) API
 - `design-system`: a stub React component library shared by both `client` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo

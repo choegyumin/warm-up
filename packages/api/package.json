@@ -1,0 +1,21 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint \"src/**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}\""
+  },
+  "dependencies": {
+    "@trpc/server": "^10.34.0",
+    "superjson": "^1.12.4",
+    "zod": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.12",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "tsconfig": "*",
+    "turbo": "latest",
+    "typescript": "^4.5.3"
+  }
+}
