@@ -8,6 +8,9 @@ module.exports = {
   },
   pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
   transpilePackages: ['design-system'],
+  compiler: {
+    emotion: true,
+  },
   webpack(config, options) {
     const { dev, isServer } = options;
     // Do not run type checking twice:

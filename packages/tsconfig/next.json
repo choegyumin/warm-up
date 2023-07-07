@@ -17,5 +17,6 @@
     "target": "es5"
   },
   "include": ["src", "next-env.d.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "files": ["./css-prop.d.ts"]
 }
