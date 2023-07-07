@@ -1,5 +1,3 @@
 module.exports = {
-  extends: [
-    "./presets/vanilla",
-  ],
+  extends: ['./presets/vanilla'],
 };

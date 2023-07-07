@@ -1,6 +1,3 @@
 module.exports = {
-  extends: [
-    "./presets/vanilla",
-    "./presets/next",
-  ],
+  extends: ['./presets/vanilla', './presets/next'],
 };

@@ -1,10 +1,13 @@
-import { Button, Header } from "design-system";
+import { Button, Header } from 'design-system';
 
-export default function Page() {
+const Page = () => {
   return (
     <>
       <Header text="Web" />
       <Button />
     </>
   );
-}
+};
+Page.displayName = 'Page';
+
+export default Page;

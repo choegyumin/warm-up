@@ -17,7 +17,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier \"**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,html,css,json,yml,xml,md}\" --write --ignore-path .prettierignore"
+    "format": "prettier \"**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,json,yaml,yml,xml,html,md,css}\" --write --ignore-path .prettierignore"
   },
   "workspaces": [
     "apps/*",

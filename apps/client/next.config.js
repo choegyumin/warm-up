@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
-  transpilePackages: ["design-system"],
+  transpilePackages: ['design-system'],
   eslint: {
     ignoreDuringBuilds: true,
   },

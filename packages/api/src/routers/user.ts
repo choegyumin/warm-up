@@ -1,6 +1,6 @@
-import { z } from "zod";
-import { db } from "../db";
-import { publicProcedure, router } from "../trpc";
+import { z } from 'zod';
+import { db } from '../db';
+import { publicProcedure, router } from '../trpc';
 
 export const userRouter = router({
   list: publicProcedure.query(async () => {
@@ -17,7 +17,7 @@ export const userRouter = router({
   create: publicProcedure.input(z.object({ name: z.string() })).mutation(async (opts) => {
     const { input } = opts;
     // Create a new user in the database
-    const user = await db.user.create({ name: input.name ?? "" });
+    const user = await db.user.create({ name: input.name ?? '' });
     return user;
   }),
 });

@@ -1,11 +1,11 @@
 /**
  * This file contains the root router of your tRPC-backend
  */
-import { userRouter } from "./user";
-import { publicProcedure, router } from "../trpc";
+import { userRouter } from './user';
+import { publicProcedure, router } from '../trpc';
 
 export const appRouter = router({
-  healthcheck: publicProcedure.query(() => "yay!"),
+  healthcheck: publicProcedure.query(() => 'yay!'),
   user: userRouter,
 });
 
