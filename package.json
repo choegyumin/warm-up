@@ -17,7 +17,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier \"**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,html,css,json,yml,xml,md}\" --write --ignore-path .prettierignore"
   },
   "workspaces": [
     "apps/*",
@@ -25,6 +25,7 @@
   ],
   "packageManager": "yarn@3.6.1",
   "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.3",
     "@turbo/gen": "latest",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
